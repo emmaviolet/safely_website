@@ -5,7 +5,9 @@ class LeadMailer < ActionMailer::Base
     @lead = lead
     emails = [
       'emmavioletmakinson@gmail.com',
-      'emma@safelyspoken.com'
+      'emma@safelyspoken.com',
+      'george@safelyspoken.com',
+      'gftclements@gmail.com'
     ]
     mail(to: emails, subject: 'New lead!')
   end
