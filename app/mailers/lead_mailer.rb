@@ -3,6 +3,10 @@ class LeadMailer < ActionMailer::Base
 
   def email(lead)
     @lead = lead
-    mail(to: 'emmavioletmakinson@gmail.com', subject: 'New lead!')
+    emails = [
+      'emmavioletmakinson@gmail.com',
+      'emma@safelyspoken.com'
+    ]
+    mail(to: emails, subject: 'New lead!')
   end
 end
