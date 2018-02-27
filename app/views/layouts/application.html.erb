@@ -7,10 +7,17 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'normalize', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'skeleton', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'safely', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <% if flash[:notice] %>
+      <div class="alert alert-primary fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close" style="text-decoration: none;">×</a>
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
