@@ -1,0 +1,40 @@
+<div class='container'>
+    <div class='u-full-width' style='margin-top: 15%;'>
+      <h1 style="color: #1EAEDB;">Safely Spoken</h1>
+      <h3><i>Let's make work better</h3></i>
+      <h5>Our mission</h5>
+      <p>Some things are hard to talk about. Even in the best company, with the greatest culture, it can be a struggle to come forward with concerns. Safely Spoken exists to make those moments easier.</p>
+      <h5>Our platform</h5>
+      <p>Our platform enables your team to do three things:</p>
+      <ul>
+        <li><b>Create a private note</b><br>
+        Make a note of anything they've seen, and store it securely until they feel ready to raise it<br>
+        We've seen private notes improve process engagement by 6x</li>
+        <li><b>'Match' reports</b><br>
+        Come forward only if a colleague or colleagues also note a similar issue with the same person<br>
+        We've seen matched reporting options improve willingness to report by 146%</li>
+        <li><b>Access confidential guidance</b><br>
+        Connect securely and anonymously to internal or external advisors<br>
+        We've seen high quality, timely advice reduce escalated issues by 47%</li>
+      </ul>
+      <h5>Our policy</h5>
+      <p>We are completely independent. We work with organisations, but we operate firmly outside them, and we won't share anything unless your team asks us to. All employers see are the concerns that their staff choose to raise with them.</p><br>
+
+      <h4>Get a demo</h4>
+      <div class="row">
+        <%= form_tag('/contacts', method: :post) do %>
+          <%= label_tag(:email, "Your email") %>
+          <%= text_field_tag(:email, nil, class: "u-full-width") %>
+          <%= submit_tag 'Submit', class: "button button-primary" %>
+        <% end %>
+      </div><br>
+
+      <h4>Our team</h4>
+
+      <p>George Clements, Sales Director & Co-founder (previously Director @ GrantTree, Managing Director @ PointTwo)</p>
+      <p>Emma Makinson, Managing Director & Co-founder (previously Consultant @ McKinsey, Software Engineer @ Funding Circle)</p>
+      <p>David Townsend, Technical Director & Co-founder (previously VP Engineering @ Funding Circle, Director of Development @ Velti)</p><br>
+      <h4>Contact</h4>
+      <p>We'd love to hear from you. Send us a message at team@safelyspoken.com</p>
+    </div>
+</div>
